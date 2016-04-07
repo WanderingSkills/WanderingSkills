@@ -8,6 +8,7 @@
 <meta name="description" content="" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="Search.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -17,59 +18,13 @@
 <div id="header-wrapper">
 
 	<!--search code!-->
-	<div class="search">
-	<script language="JavaScript">
-		<!--
-		var TRange=null;
-
-		function findString (str) {
-			if (parseInt(navigator.appVersion)<4) return;
-			var strFound;
-			if (window.find) {
-
-				// CODE FOR BROWSERS THAT SUPPORT window.find
-
-				strFound=self.find(str);
-				if (!strFound) {
-					strFound=self.find(str,0,1);
-					while (self.find(str,0,1)) continue;
-				}
-			}
-			else if (navigator.appName.indexOf("Microsoft")!=-1) {
-
-				// EXPLORER-SPECIFIC CODE
-
-				if (TRange!=null) {
-					TRange.collapse(false);
-					strFound=TRange.findText(str);
-					if (strFound) TRange.select();
-				}
-				if (TRange==null || strFound==0) {
-					TRange=self.document.body.createTextRange();
-					strFound=TRange.findText(str);
-					if (strFound) TRange.select();
-				}
-			}
-			else if (navigator.appName=="Opera") {
-				alert ("Opera browsers not supported, sorry...")
-				return;
-			}
-			if (!strFound) alert ("String '"+str+"' not found!")
-			return;
-		}
-		//-->
-	</script>
-
-
-	<iframe id="srchform2"
+	<div  class="search">
+		<iframe id="srchform2"
 			src="javascript:' <form action=\'javascript:void();\' onSubmit=if(this.t1.value!=\'\')parent.findString(this.t1.value);return(false); >
 			<input type=text id=t1 name=t1 value=عبارت size=20>
 			<input type=submit id=k name=b1 value=جستجو ></form>'">
 		</iframe>
-
-		</div>
-
-
+	</div>
 	<!--end search code!-->
 
 	<div id="header" class="container">
@@ -82,7 +37,7 @@
 				<li class="active"><a href="#" accesskey="1" title="">صفحه اصلی</a></li>
 				<li class="active"><a href="LogEmployer.html" accesskey="2" title="">ثبت نام /ورود کارفرما</a></li>
 				<li class="active"><a href="LogEmployee.html" accesskey="3" title="">ثبت نام/ورود کارجویان</a></li>
-				<li class="active"><a href="about.html" accesskey="4" title="">درباره سایت</a></li>
+				<li class="active"><a href="#" accesskey="4" title="">درباره سایت</a></li>
 			</ul>
 		</div>
 	</div>
@@ -148,6 +103,46 @@
 <div id="copyright" class="container">
 	<p>&copy; 2016. All rights reserved. | Design by Parnaz & Mahdie</a>.</p>
 </div>
+<script language="JavaScript">
+	<!--
+	var TRange=null;
 
+	function findString (str) {
+		if (parseInt(navigator.appVersion)<4) return;
+		var strFound;
+		if (window.find) {
+
+			// CODE FOR BROWSERS THAT SUPPORT window.find
+
+			strFound=self.find(str);
+			if (!strFound) {
+				strFound=self.find(str,0,1);
+				while (self.find(str,0,1)) continue;
+			}
+		}
+		else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+			// EXPLORER-SPECIFIC CODE
+
+			if (TRange!=null) {
+				TRange.collapse(false);
+				strFound=TRange.findText(str);
+				if (strFound) TRange.select();
+			}
+			if (TRange==null || strFound==0) {
+				TRange=self.document.body.createTextRange();
+				strFound=TRange.findText(str);
+				if (strFound) TRange.select();
+			}
+		}
+		else if (navigator.appName=="Opera") {
+			alert ("Opera browsers not supported, sorry...")
+			return;
+		}
+		if (!strFound) alert ("String '"+str+"' not found!")
+		return;
+	}
+	//-->
+</script>
 </body>
 </html>

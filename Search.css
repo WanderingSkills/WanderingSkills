@@ -1,0 +1,7 @@
+iframe {
+    border: none;
+    margin-left: 100px;
+}
+input #t1{
+    border-radius: 5px !important;
+}

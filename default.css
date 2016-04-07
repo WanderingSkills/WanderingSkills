@@ -17,13 +17,9 @@ html, body
 	
 	h1, h2, h3,p
 	{
-		margin:0;
+		margin: 0;
 		padding: 0;
 		font-family:"B Yekan" !important;
-		direction: rtl;
-
-		
-
 
 	}
 	
@@ -466,7 +462,7 @@ html, body
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		border-top: 1px solid rgba(0,0,0,0.08);
+		border-top: 1px solid rgba(0,0,0,0.08)!important;
 	}
 	
 	#copyright p
