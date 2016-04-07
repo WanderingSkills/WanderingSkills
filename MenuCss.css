@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    width: 20%;
+    margin-top: 40px !important;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+
+
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    border: solid 1px #0f0f0f;
+    border-radius: 5px;
+    font-family: "B Yekan";
+}
+
+li a.active {
+    background-color: #2651a8;
+    color: white;
+    }
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
